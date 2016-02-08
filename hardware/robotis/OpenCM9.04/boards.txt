@@ -1,0 +1,28 @@
+
+CM904.name=OpenCM9.04
+
+CM904.upload.tool               	= OpenCM904ld
+CM904.upload.protocol           	= something
+CM904.upload.maximum_size       	= 49152
+CM904.upload.ram.maximum_size   	= 17000
+CM904.upload.flash.maximum_size 	= 49152
+
+# 부?�로???�운로드 ?�정 
+CM904.bootloader.tool				= OpenCM904ld
+CM904.bootloader.file				= baram/smartbd_boot_baram.bin
+
+
+CM904.build.board=CM904
+CM904.build.mcu=cortex-m3
+CM904.build.family=cortex-m3
+CM904.build.arch=SAM
+CM904.build.f_cpu=72000000L
+CM904.build.usb_product="smart robot"
+CM904.build.core=arduino
+CM904.build.extra_flags=-mthumb -DSTM32_MEDIUM_DENSITY -DMCU_STM32F103CB -DVECT_TAB_FLASH -DBOARD_CM904
+CM904.build.ldscript=linker_scripts/gcc/flash.ld
+CM904.build.variant=CM904
+CM904.build.variant_system_lib=libcs3_stm32_med_density.a
+
+
+
