@@ -54,6 +54,8 @@ static void setupNVIC(void);
 static void setupADC(void);
 static void setupTimers(void);
 
+extern void TxDStringC(char *str);
+
 void init(void) {
     setupFlash();
     setupClocks();
@@ -72,12 +74,12 @@ void init(void) {
 
 #ifdef CM9_DEBUG
     //for debug
-  gpio_set_mode(GPIOA, 2, GPIO_AF_OUTPUT_PP);
+    gpio_set_mode(GPIOA, 2, GPIO_AF_OUTPUT_PP);
  	gpio_set_mode(GPIOA, 3, GPIO_INPUT_FLOATING);
  	usart_init(USART2);
  	usart_set_baud_rate(USART2, STM32_PCLK1, 57600);
  	usart_enable(USART2);
- 	//TxDStringC("hello pandora\r\n");
+ 	TxDStringC("hello pandora\r\n");
 #endif
 
 

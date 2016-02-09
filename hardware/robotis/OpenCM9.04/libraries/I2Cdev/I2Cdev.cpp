@@ -320,7 +320,13 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8
         } else {
           count = -1 * status;
         }
-
+    #elif  (I2CDEV_IMPLEMENTATION == I2CDEV_HARDWARE )
+        uint8_t status = HwI2C.read(devAddr, regAddr, data, length);
+        if(status == 0) {
+          count = length;
+        } else {
+          count = -1 * status;
+        }        
     #endif
 
     // check for timeout
@@ -486,6 +492,18 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint1
         } else {
            count = -1 * status;
         }
+    #elif  (I2CDEV_IMPLEMENTATION == I2CDEV_HARDWARE )
+        uint16_t intermediate[(uint8_t)length];
+        uint8_t status = HwI2C.read(devAddr, regAddr, (uint8_t *)intermediate, length*2 );
+        if(status == 0) {
+           count = length;
+           for(uint8_t i = 0; i < length; i++) {
+              data[i] = (intermediate[2*i] << 8) | intermediate[2*i + i];
+           }
+        } else {
+           count = -1 * status;
+        }
+
     #endif
 
     if (timeout > 0 && millis() - t1 >= timeout && count < length) count = -1; // timeout
@@ -640,7 +658,9 @@ bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_
             Serial.println(status);
 	#elif (I2CDEV_IMPLEMENTATION == I2CDEV_I2CMASTER_LIBRARY)
             status = I2c.write(devAddr, regAddr, data[i]);
-        #endif
+    #elif  (I2CDEV_IMPLEMENTATION == I2CDEV_HARDWARE )
+            status = HwI2C.write(devAddr, regAddr, &data[i], 1);
+    #endif
         #ifdef I2CDEV_SERIAL_DEBUG
             Serial.print(data[i], HEX);
             if (i + 1 < length) Serial.print(" ");
@@ -695,7 +715,13 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16
 	#elif (I2CDEV_IMPLEMENTATION == I2CDEV_I2CMASTER_LIBRARY)
             status = I2c.write((uint8_t)devAddr, (uint8_t)regAddr, (uint8_t)(data[i++] >> 8));
             status = I2c.write((uint8_t)devAddr, (uint8_t)regAddr + 1, (uint8_t)data[i]);
-        #endif
+    #elif  (I2CDEV_IMPLEMENTATION == I2CDEV_HARDWARE )
+            uint8_t ch;
+            ch = (uint8_t)(data[i++] >> 8);
+            status = HwI2C.write((uint8_t)devAddr, (uint8_t)regAddr, &ch, 1 );
+            ch = (uint8_t)data[i];
+            status = HwI2C.write((uint8_t)devAddr, (uint8_t)regAddr + 1, &ch, 1 );            
+    #endif
         #ifdef I2CDEV_SERIAL_DEBUG
             Serial.print(data[i], HEX);
             if (i + 1 < length) Serial.print(" ");

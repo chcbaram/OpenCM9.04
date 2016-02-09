@@ -149,6 +149,8 @@ bool boardUsesPin(uint8 pin);
 #include "CM900.h"
 #elif defined(BOARD_CM904)
 #include "CM904.h"
+#elif defined(BOARD_CUPDRONE)
+#include "CupDrone.h"
 #else
 /*
  * TODO turn this into a warning so people can:

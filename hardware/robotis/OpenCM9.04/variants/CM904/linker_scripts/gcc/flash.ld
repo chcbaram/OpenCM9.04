@@ -286,13 +286,24 @@ SECTIONS
     /*
      * .bss
      */
+    . = ALIGN(4);
     .bss :
       {
+        _sbss = .;         /* define a global symbol at bss start */
+        __bss_start__ = _sbss;
+
         *(.bss .bss.* .gnu.linkonce.b.*)
         *(COMMON)
         . = ALIGN (8);
         _end = .;
+
+        . = ALIGN(4);
+        _ebss = .;         /* define a global symbol at bss end */
+        __bss_end__ = _ebss;
+
       } > REGION_BSS AT> REGION_TEXT
+
+
 
     /*
      * Constants needed for the pieces of CS3 we use during

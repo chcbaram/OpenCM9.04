@@ -59,11 +59,13 @@ THE SOFTWARE.
                                       // ^^^ FastWire implementation in I2Cdev is INCOMPLETE!
 #define I2CDEV_I2CMASTER_LIBRARY    4 // I2C object from DSSCircuits I2C-Master Library at
                                       //  https://github.com/DSSCircuits/I2C-Master-Library
+#define I2CDEV_HARDWARE             5 // I2C object from DSSCircuits I2C-Master Library at
+
 
 // -----------------------------------------------------------------------------
 // I2C interface implementation setting
 // -----------------------------------------------------------------------------
-#define I2CDEV_IMPLEMENTATION       I2CDEV_ARDUINO_WIRE
+#define I2CDEV_IMPLEMENTATION       I2CDEV_HARDWARE
 
 // -----------------------------------------------------------------------------
 // Arduino-style "Serial.print" debug constant (uncomment to enable)

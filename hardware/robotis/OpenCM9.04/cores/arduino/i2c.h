@@ -64,6 +64,8 @@ typedef enum i2c_state {
  */
 typedef struct i2c_msg {
     uint16 addr;                /**< Address */
+    uint8  reg_addr;
+    
 #define I2C_MSG_READ            0x1
 #define I2C_MSG_10BIT_ADDR      0x2
     uint16 flags;               /**< Bitwise OR of I2C_MSG_READ and

@@ -62,7 +62,7 @@ public:
     uint32 available(void);
     uint8 read(void);
     void flush(void);
-    virtual void write(unsigned char);
+    virtual size_t write(unsigned char);
     using Print::write;
  /*
  * [ROBOTIS]2012-12-13 add to support making user interrupt function

@@ -45,6 +45,7 @@
 //#include "wirish_math.h"
 //#include "wirish_time.h"
 #include "HardwareSPI.h"
+#include "HardwareI2C.h"
 #include "HardwareSerial.h"
 #include "HardwareTimer.h"
 #include "usb_serial.h"

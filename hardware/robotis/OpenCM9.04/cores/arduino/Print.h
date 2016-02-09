@@ -22,7 +22,7 @@
 
 #ifndef _PRINT_H_
 #define _PRINT_H_
-
+#include <stdio.h> // for size_t
 #include "libpandora_types.h"
 
 enum {
@@ -35,7 +35,7 @@ enum {
 
 class Print {
 public:
-    virtual void write(uint8 ch) = 0;
+    virtual size_t write(uint8 ch) = 0;
     virtual void write(const char *str);
     virtual void write(const void *buf, uint32 len);
     void print(char);

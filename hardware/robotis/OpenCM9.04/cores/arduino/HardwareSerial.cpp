@@ -110,8 +110,10 @@ uint32 HardwareSerial::available(void) {
     return usart_data_available(usart_device);
 }
 
-void HardwareSerial::write(unsigned char ch) {
+size_t HardwareSerial::write(unsigned char ch) {
     usart_putc(usart_device, ch);
+
+    return 0;
 }
 
 void HardwareSerial::flush(void) {

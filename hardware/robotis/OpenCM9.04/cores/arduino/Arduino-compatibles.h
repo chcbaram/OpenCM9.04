@@ -353,7 +353,7 @@ void togglePin(uint8 pin);
 static inline void toggleLED() {
     togglePin(BOARD_LED_PIN);
 }
-#if defined(BOARD_CM904)
+#if defined(BOARD_CUPDRONE)
 /**
  * If the button is currently pressed, waits until the button is no
  * longer being pressed, and returns true.  Otherwise, returns false.

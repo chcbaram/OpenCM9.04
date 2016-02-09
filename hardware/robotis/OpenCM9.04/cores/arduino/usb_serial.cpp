@@ -52,9 +52,11 @@ void USBSerial::end(void) {
     disableUSB();
 }
 
-void USBSerial::write(uint8 ch) {
+size_t USBSerial::write(uint8 ch) {
     const uint8 buf[] = {ch};
     this->write(buf, 1);
+
+    return 0;
 }
 
 void USBSerial::write(const char *str) {

@@ -38,6 +38,7 @@
 #include "i2c.h"
 #include "string.h"
 #include "systick.h"
+#include "delay.h"
 
 static i2c_dev i2c_dev1 = {
     .regs         = I2C1_BASE,
@@ -186,9 +187,10 @@ static void i2c_irq_handler(i2c_dev *dev) {
              * register.  We should get another TXE interrupt
              * immediately to fill DR again.
              */
-            if (msg->length != 1) {
-                i2c_write(dev, msg->data[msg->xferred++]);
-            }
+            //if (msg->length != 1) {
+            //    i2c_write(dev, msg->data[msg->xferred++]);
+            //}
+            i2c_write(dev, msg->reg_addr);
         }
         sr1 = sr2 = 0;
     }
@@ -201,7 +203,10 @@ static void i2c_irq_handler(i2c_dev *dev) {
     if ((sr1 & I2C_SR1_TXE) && !(sr1 & I2C_SR1_BTF)) {
         I2C_CRUMB(TXE_ONLY, 0, 0);
         if (dev->msgs_left) {
-            i2c_write(dev, msg->data[msg->xferred++]);
+            if( msg->length > 0 )
+            {
+                i2c_write(dev, msg->data[msg->xferred++]);
+            }
             if (msg->xferred == msg->length) {
                 /*
                  * End of this message. Turn off TXE/RXNE and wait for

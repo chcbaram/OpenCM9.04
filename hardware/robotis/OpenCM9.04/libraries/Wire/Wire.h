@@ -51,8 +51,8 @@ typedef struct {
 #define ENACKTRNS 3        /* readd nack on transmit of data */
 #define EOTHER    4        /* other error */
 
-#define SDA 20
-#define SCL 21
+#define SDA 25
+#define SCL 24
 
 #define I2C_WRITE 0
 #define I2C_READ  1
