@@ -17,10 +17,10 @@
           "help": {
             "online": "https://github.com/chcbaram/OpenCM9.04/"
           },
-          "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04_1.0.0.zip",
-          "archiveFileName": "OpenCM9.04_1.0.0.zip",
-          "checksum": "SHA-256:aad2f411b0c2fa2e063489a430c054765d67032818e1f90bb3e025e9ef8dec29",
-          "size": "440630",
+          "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04_1.0.0.tar.bz2",
+          "archiveFileName": "OpenCM9.04_1.0.0.tar.bz2",
+          "checksum": "SHA-256:b3b75d09d128c4d846e5280abc342d1a2bc518c01ca0f8b0ce417d645dcb8e49",
+          "size": "248152",
           "help": {
                     "online": "https://github.com/chcbaram/OpenCM9.04/"
           },
