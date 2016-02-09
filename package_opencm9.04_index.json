@@ -34,14 +34,51 @@
               "version": "4.8.3-2014q1"
             },
             {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.0.1-arduino5"
+              "packager": "OpenCM9.04",
+              "name": "OpenCM9.04ld",
+              "version": "1.0"
             }
           ]
         }
       ],
-      "tools":[]
+      "tools":[
+        {
+          "name": "OpenCM9.04ld",
+          "version": "1.0",
+          "systems": [
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/tools_1.0.zip",
+              "archiveFileName": "tools_1.0.zip",
+              "checksum": "SHA-256:8457ae21f89afacf459aa6ca23543fcd0f5d516c3c61359ee35dec3867e00b45",
+              "size": "28916"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/tools_1.0.zip",
+              "archiveFileName": "tools_1.0.zip",
+              "checksum": "SHA-256:8457ae21f89afacf459aa6ca23543fcd0f5d516c3c61359ee35dec3867e00b45",
+              "size": "28916"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/tools_1.0.zip",
+              "archiveFileName": "tools_1.0.zip",
+              "checksum": "SHA-256:8457ae21f89afacf459aa6ca23543fcd0f5d516c3c61359ee35dec3867e00b45",
+              "size": "28916"
+            },
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/tools_1.0.zip",
+              "archiveFileName": "tools_1.0.zip",
+              "checksum": "SHA-256:8457ae21f89afacf459aa6ca23543fcd0f5d516c3c61359ee35dec3867e00b45",
+              "size": "28916"
+            }
+          ]
+        },
+
+
+      ]
     }
   ]
 }
