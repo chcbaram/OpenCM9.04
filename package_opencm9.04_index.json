@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "OpenCM9.04 boards",
+          "name": "OpenCM9.04 Board",
           "architecture": "Baram",
           "version": "1.0.0",
           "category": "Arduino",
