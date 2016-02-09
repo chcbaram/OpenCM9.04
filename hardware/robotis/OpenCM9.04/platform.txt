@@ -98,7 +98,7 @@ recipe.size.regex=\.text\s+([0-9]+).*
 
 tools.OpenCM904ld.cmd=OpenCM904ld
 tools.OpenCM904ld.cmd.windows=OpenCM904ld.exe
-tools.OpenCM904ld.cmd.path={runtime.hardware.path}/tools
+tools.OpenCM904ld.cmd.path={runtime.tools.OpenCM9.04ld.path}
 
 tools.OpenCM904ld.upload.params.verbose=-v
 tools.OpenCM904ld.upload.params.quiet=-q
