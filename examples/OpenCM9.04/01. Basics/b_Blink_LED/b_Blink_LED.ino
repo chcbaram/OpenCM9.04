@@ -19,8 +19,8 @@ void setup() {
 
 void loop() {
   digitalWrite(BOARD_LED_PIN, HIGH); // set to as HIGH LED is turn-off
-  delay(100);          // Wait for 0.1 second
+  delay(50);          // Wait for 0.1 second
   digitalWrite(BOARD_LED_PIN, LOW);  // set to as LOW LED is turn-on
-  delay(100);          // Wait for 0.1 second
+  delay(50);          // Wait for 0.1 second
 }
 

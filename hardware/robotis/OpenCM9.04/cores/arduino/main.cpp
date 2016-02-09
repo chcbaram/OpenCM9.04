@@ -28,9 +28,9 @@
 // Otherwise, statically allocated objects that need libmaple may fail.
 #include "Pandora.h"
 
- __attribute__(( constructor )) void premain() {
-    init();
-}
+// __attribute__(( constructor )) void premain() {
+//    init();
+//}
 int main(void) {
     setup();
 

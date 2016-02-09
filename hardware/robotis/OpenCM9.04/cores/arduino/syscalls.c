@@ -42,6 +42,10 @@ extern char _lm_heap_end;
 #define CONFIG_HEAP_END                 ((caddr_t)&_lm_heap_end)
 #endif
 
+
+caddr_t _sbrk       _PARAMS ((int));
+
+
 /*
  * _sbrk -- Increment the program break.
  *

@@ -19,7 +19,7 @@ int16_t gx, gy, gz;
 
 
 
-#define LED_PIN BOARD_LED0_PIN
+#define LED_PIN BOARD_LED_PIN
 
 bool blinkState = false;
 

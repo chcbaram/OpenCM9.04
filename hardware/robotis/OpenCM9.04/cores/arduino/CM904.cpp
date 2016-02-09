@@ -39,7 +39,6 @@
 
 #if defined(BOARD_CM904)
 #include "boards.h"
-
 #include "gpio.h"
 #include "timer.h"
 
