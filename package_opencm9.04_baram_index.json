@@ -1,21 +1,21 @@
 {
   "packages": [
     {
-      "name": "robotis",
-      "maintainer": "Baram",
-      "websiteURL": "https://github.com/chcbaram/OpenCM9.04/",
-      "email": "chcbaram@paran.com",
+      "name": "Elektor",
+      "maintainer": "Elektor.Labs",
+      "websiteURL": "https://github.com/ElektorLabs/arduino/",
+      "email": "info@elektor-labs.com",
       "help": {
-        "online": "https://github.com/chcbaram/OpenCM9.04/"
+        "online": "http://www.elektor-labs.com"
       },
       "platforms": [
         {
-          "name": "Baram OpenCM9.04",
-          "architecture": "STM32",
+          "name": "Elektor AVR boards",
+          "architecture": "avr",
           "version": "1.0.0",
-          "category": "ROBOTIS",
+          "category": "Contributed",
           "help": {
-            "online": "https://github.com/chcbaram/OpenCM9.04/"
+            "online": "http://www.elektor-labs.com"
           },
           "url": "https://raw.githubusercontent.com/ElektorLabs/arduino/master/elektor-boards-1.0.0_ide-1.6.6.zip",
           "archiveFileName": "elektor-boards-1.0.0_ide-1.6.6.zip",
@@ -25,13 +25,19 @@
                     "online": "http://www.elektor-labs.com"
           },
           "boards": [
-            {"name": "OpenCM9.04"}
+            {"name": "eRIC Nitro"},
+            {"name": "Platino"}
           ],
           "toolsDependencies": [
             {
               "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "4.8.3-2014q1"
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
             }
           ]
         }
