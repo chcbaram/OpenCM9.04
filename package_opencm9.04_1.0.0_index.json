@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "Opencm9.04",
+      "name": "OpenCM9.04",
       "maintainer": "Baram",
       "websiteURL": "https://github.com/chcbaram/OpenCM9.04/",
       "email": "chcbaram@paran.com",
@@ -11,7 +11,7 @@
       "platforms": [
         {
           "name": "OpenCM9.04 boards",
-          "architecture": "OpenCM9.04",
+          "architecture": "Baram",
           "version": "1.0.0",
           "category": "Arduino",
           "help": {
@@ -19,10 +19,10 @@
           },
           "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04_1.0.0.zip",
           "archiveFileName": "OpenCM9.04_1.0.0.zip",
-          "checksum": "SHA-256:712ef99b57e07e1d33812e7e05d4d971746214648b237b5ea97ebfc235ec1090",
-          "size": "191052",
+          "checksum": "SHA-256:7f2c28c45ef5510e8aacbe3fa03cce37ba97bd95563774d23e287a733ab1c902",
+          "size": "434492",
           "help": {
-                    "online": "http://www.elektor-labs.com"
+                    "online": "https://github.com/chcbaram/OpenCM9.04/"
           },
           "boards": [
             {"name": "OpenCM9.04(Baram)"}

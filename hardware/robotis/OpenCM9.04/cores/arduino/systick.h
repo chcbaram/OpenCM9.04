@@ -35,6 +35,9 @@
 
 #include "libpandora_types.h"
 #include "util.h"
+#include <sys/stat.h>
+#include <errno.h>
+ #include <unistd.h>
 
 #ifdef __cplusplus
 extern "C"{
@@ -108,6 +111,8 @@ static inline uint32 systick_get_count(void) {
 static inline uint32 systick_check_underflow(void) {
     return SYSTICK_BASE->CSR & SYSTICK_CSR_COUNTFLAG;
 }
+
+caddr_t _sbrk(int);
 
 #ifdef __cplusplus
 } // extern "C"

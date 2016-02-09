@@ -27,6 +27,7 @@
 
 #include <sys/stat.h>
 #include <errno.h>
+ #include <unistd.h>
 //#include "libpandora.h"
 
 
@@ -43,7 +44,7 @@ extern char _lm_heap_end;
 #endif
 
 
-caddr_t _sbrk       _PARAMS ((int));
+
 
 
 /*
