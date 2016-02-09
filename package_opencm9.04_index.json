@@ -69,9 +69,9 @@
             },
             {
               "host": "i386-apple-darwin11",
-              "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04ld_1.0.zip",
-              "archiveFileName": "OpenCM9.04ld_1.0.zip",
-              "checksum": "SHA-256:940aa46edaa8e96faf44396cd7d5c16eb4ef3b6e8fcc440957238be9c81d35a6",
+              "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04ld_1.0.tar.bz2",
+              "archiveFileName": "OpenCM9.04ld_1.0.tar.bz2",
+              "checksum": "SHA-256:af44e5eeaf71278d9922f1edd81062e9a09bfa703045aabdee3ef63c99fcf84e",
               "size": "28916"
             }
           ]
