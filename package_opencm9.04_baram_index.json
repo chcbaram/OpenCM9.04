@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Baram's OpenCM9.04",
+          "name": "Baram OpenCM9.04",
           "architecture": "STM32",
           "version": "1.0.0",
           "category": "ROBOTIS",
