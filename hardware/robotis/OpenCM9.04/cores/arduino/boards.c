@@ -66,7 +66,9 @@ extern void TxDStringC(char *str);
 void sys_init(void) 
 {
 
-
+    usart_disable(USART2);
+    afio_cfg_debug_ports(AFIO_DEBUG_SW_ONLY); 
+    
     setupFlash();
     setupClocks();
     setupNVIC();

@@ -31,6 +31,9 @@ MEMORY
 EXTERN(_lm_heap_start);
 EXTERN(_lm_heap_end);
 
+GROUP(
+   libnosys.a
+)
 
 /* Define output sections */
 SECTIONS
