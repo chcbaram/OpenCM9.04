@@ -77,6 +77,19 @@
 #define BOARD_SPI2_MISO_PIN     20 //D28 PB14
 #define BOARD_SPI2_SCK_PIN      19 //D27 PB13
 
+
+#define A0		D0
+#define A1		D1
+#define A2		D2
+#define A3		D3
+#define A4		D4
+#define A5		D5
+#define A6		D6
+#define A7		D7
+#define A8		D8
+#define A9		D9
+
+
 void boardInit(void);
 
 

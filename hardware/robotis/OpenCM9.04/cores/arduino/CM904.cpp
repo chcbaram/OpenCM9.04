@@ -113,7 +113,6 @@ extern const uint8 boardUsedPins[] __FLASH__ = {
     BOARD_JTCK_SWCLK_PIN, BOARD_JTDI_PIN, BOARD_JTDO_PIN, BOARD_NJTRST_PIN
 };*/
 
-
 #endif
 
 

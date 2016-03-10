@@ -113,7 +113,7 @@ uint32 HardwareSerial::available(void) {
 size_t HardwareSerial::write(unsigned char ch) {
     usart_putc(usart_device, ch);
 
-    return 0;
+    return 1;
 }
 
 void HardwareSerial::flush(void) {

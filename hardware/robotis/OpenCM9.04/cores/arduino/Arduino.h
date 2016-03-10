@@ -25,9 +25,17 @@
  *****************************************************************************/
 
 #include <stdint.h>
- #include <inttypes.h>
+#include <inttypes.h>
 #include "wirish.h"
 
 
+#ifdef __cplusplus
+
+#include "WCharacter.h"
+#include "WString.h"
+
+#endif // __cplusplus
+
 void setup();
 void loop();
+

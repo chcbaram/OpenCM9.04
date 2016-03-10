@@ -41,6 +41,7 @@ public:
     USBSerial(void);
 
     void begin(void);
+    void begin(uint32 baud);
     void end(void);
 
     uint32 available(void);
@@ -64,6 +65,8 @@ public:
 };
 
 extern USBSerial SerialUSB;
+
+#define Serial  SerialUSB
 
 #endif
 

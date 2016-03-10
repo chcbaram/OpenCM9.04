@@ -48,6 +48,9 @@ void USBSerial::begin(void) {
     //setupUSB();
 }
 
+void USBSerial::begin(uint32 baud) {
+}
+
 void USBSerial::end(void) {
     disableUSB();
 }
@@ -56,7 +59,7 @@ size_t USBSerial::write(uint8 ch) {
     const uint8 buf[] = {ch};
     this->write(buf, 1);
 
-    return 0;
+    return 1;
 }
 
 void USBSerial::write(const char *str) {
