@@ -101,7 +101,38 @@
               "version": "1.0"
             }
           ]
-        }                
+        },                
+        {
+          "name": "OpenCM9.04 Board",
+          "architecture": "Baram",
+          "version": "1.0.3",
+          "category": "Arduino",
+          "help": {
+            "online": "https://github.com/chcbaram/OpenCM9.04/"
+          },
+          "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04_1.0.3.tar.bz2",
+          "archiveFileName": "OpenCM9.04_1.0.3.tar.bz2",
+          "checksum": "SHA-256:bdda425aa275cde67aaa023efbeadee53d3708dcfa37f0081c05d9d16d1080ed",
+          "size": "255695",
+          "help": {
+                    "online": "https://github.com/chcbaram/OpenCM9.04/"
+          },
+          "boards": [
+            {"name": "OpenCM9.04(Baram)"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "OpenCM9.04",
+              "name": "OpenCM9.04ld",
+              "version": "1.0"
+            }
+          ]
+        }                        
       ],
       "tools":[
         {

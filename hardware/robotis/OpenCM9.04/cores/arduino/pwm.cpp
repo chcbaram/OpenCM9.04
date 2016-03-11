@@ -43,9 +43,8 @@ void pwmWrite(uint8 pin, uint16 duty_cycle)
         return;
     }
 
-    if( duty_cycle > 1000 ) duty_cycle = 1000;
-
-    duty_out = duty_cycle * 0xFFFF / 1000;
-
+    //if( duty_cycle > 1000 ) duty_cycle = 1000;
+    //duty_out = duty_cycle * 0xFFFF / 1000;
+    duty_out = duty_cycle;
     timer_set_compare(dev, PIN_MAP[pin].timer_channel, duty_out);
 }
