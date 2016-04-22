@@ -36,7 +36,7 @@
             {
               "packager": "OpenCM9.04",
               "name": "OpenCM9.04ld",
-              "version": "1.0"
+              "version": "1.1"
             }
           ]
         },
@@ -67,7 +67,7 @@
             {
               "packager": "OpenCM9.04",
               "name": "OpenCM9.04ld",
-              "version": "1.0"
+              "version": "1.1"
             }
           ]
         },        
@@ -98,7 +98,7 @@
             {
               "packager": "OpenCM9.04",
               "name": "OpenCM9.04ld",
-              "version": "1.0"
+              "version": "1.1"
             }
           ]
         },                
@@ -129,7 +129,7 @@
             {
               "packager": "OpenCM9.04",
               "name": "OpenCM9.04ld",
-              "version": "1.0"
+              "version": "1.1"
             }
           ]
         }                        
