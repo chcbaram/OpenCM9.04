@@ -143,22 +143,22 @@
               "host": "i686-linux-gnu",
               "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04ld_1.1.zip",
               "archiveFileName": "OpenCM9.04ld_1.1.zip",
-              "checksum": "SHA-256:8a7787674e283ea08b6b318b4fe61e8c155c728865a028d6bb844ecb76ff2a3f",
-              "size": "17242"
+              "checksum": "SHA-256:59d08ed7a9117d399232f4ffff2a1c56797ca19b0aadf22c66ad0487a92ff65b",
+              "size": "16181"
             },
             {
               "host": "x86_64-pc-linux-gnu",
               "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04ld_1.1.zip",
               "archiveFileName": "OpenCM9.04ld_1.1.zip",
-              "checksum": "SHA-256:8a7787674e283ea08b6b318b4fe61e8c155c728865a028d6bb844ecb76ff2a3f",
-              "size": "17242"
+              "checksum": "SHA-256:59d08ed7a9117d399232f4ffff2a1c56797ca19b0aadf22c66ad0487a92ff65b",
+              "size": "16181"
             },
             {
               "host": "i686-mingw32",
               "url": "https://raw.githubusercontent.com/chcbaram/OpenCM9.04/master/OpenCM9.04ld_1.1.zip",
               "archiveFileName": "OpenCM9.04ld_1.1.zip",
-              "checksum": "SHA-256:8a7787674e283ea08b6b318b4fe61e8c155c728865a028d6bb844ecb76ff2a3f",
-              "size": "17242"
+              "checksum": "SHA-256:59d08ed7a9117d399232f4ffff2a1c56797ca19b0aadf22c66ad0487a92ff65b",
+              "size": "16181"
             },
             {
               "host": "i386-apple-darwin11",
